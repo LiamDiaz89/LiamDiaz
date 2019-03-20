@@ -1,0 +1,218 @@
+/* body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0px;
+}
+/* body */
+
+/* header */
+nav img {
+    height: 50px;
+}
+/* header */
+
+/* hero */
+.hero {
+    height: 300px;
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.hero h1 {
+    color: white;
+}
+h1 strong {
+    color: #BF00FF;
+}
+.hero-image {
+    object-fit: cover;
+}
+/* hero */
+
+/* About */
+.about {
+    background: #4C0B5F;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.about h1, h2 {
+    text-align: center;
+    padding-top: 1px;
+}
+.about h1, p, h2 {
+    color: white;
+    text-align: center;
+}
+/* About */
+
+/* experiencia */
+.box{
+    display: wrap;
+    margin: double #4c0b5f;
+}
+
+.experiencia img {
+    height: 350px;
+}
+.experiencia h1 {
+    text-align: center;
+    color: black;
+}
+
+/* experiencia */
+
+/* certificado */
+.certificado h1 {
+    text-align: center;
+    color: black;
+}
+.carousel-inner {
+    border: double #4C0B5F;
+    border-radius: 20%;
+}
+.carousel-inner img {
+
+    /* max-height: 70vh; */
+    object-fit: contain;
+}
+/* certificado */
+
+/* contacto */
+.contacto h3 {
+    font-size: 1.17em;
+}
+form {
+    text-align: center;
+}
+
+.contacto {
+    background-color: #4C0B5F;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 50px 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.face{
+    background-image: url(images/facebook.svg)
+}
+/* contacto */
+
+/* footer */
+footer {
+    background: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+.container {
+    /* border: 1px solid red; */
+    width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+ }
+ 
+footer p {
+    color: white;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+
+/* page2 certificados */
+.certificados h1, p {
+    color: black;
+}
+.certificados h1 {
+    text-align: center;
+}
+.certificados.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* page2 certificados */
+
+/* mediaqueries */
+@media screen and (max-width: 1023px) {
+.hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  } 
+    h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .about p {
+      text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+    /* background: rgba(0,0,0,.5) */
+  }
+  .container {
+
+  }
+  .hero {
+    padding: 2em 1em;
+  }
+  .about p {
+    text-align: center;
+}
+}
